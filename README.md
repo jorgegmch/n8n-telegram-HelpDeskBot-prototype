@@ -26,6 +26,53 @@ Este proyecto consiste en un Chatbot de Telegram desarrollado en **n8n**, diseñ
     * `3. Mis solicitudes`: Historial personal de interacciones.
     * `4. Reportes`: Visualización de métricas (restringido según rol).
     * `5. Configuración`: Ajustes de perfil.
+3. **Reportes:** En esta opción se visualiza el reporte total de las solicitudes, en donde la salida presenta la siguiente estructura:
+```bash
+📊 Reporte de solicitudes
+
+Total de solicitudes: 6
+
+🟢 Abiertas: 3
+🟡 En proceso: 1
+🔵 Cerradas: 2
+
+¿Qué deseas hacer ahora?
+
+1. Reporte por tipo de solicitud 📩
+9. Volver al menú principal 🏠
+```
+Al ingresar a la opción de 'Reporte por tipo de solicitud' el usuario obtiene un resumen general con el tipo de solicutd más frecuente y el detalle por cada tipo de solicitud con la siguiente estructura de salida:
+```bash
+Reporte de solicitudes:
+
+Resumen general
+- Tipo más frecuente: Solicitud administrativa
+- Total solicitudes: 6
+- Interacciones con el bot: 25
+
+Detaille por tipo:
+
+1. Solicitud administrativa
+   - Total: 4
+   - Abiertas: 2
+   - En proceso: 0
+   - Cerradas: 1
+
+2. Soporte técnico
+   - Total: 2
+   - Abiertas: 1
+   - En proceso: 1
+   - Cerradas: 0
+
+3. Consulta general
+   - Total: 10
+   - Abiertas: 2
+   - En proceso: 1
+   - Cerradas: 8
+```
+Vista opción 'Reporte' en Telegram:
+
+<img width="1264" height="903" alt="Salida en telegram de opt reporte" src="https://github.com/user-attachments/assets/66dd267a-6926-4ddf-b0ea-f6b4028677f0" />
 
 ## ⚙️ Arquitectura del Flujo
 
